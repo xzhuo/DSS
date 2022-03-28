@@ -1,4 +1,4 @@
-FROM rocker/r-devel
+FROM rocker/r-ubuntu:18.04
 RUN R -e 'install.packages("remotes"); \
     remotes::install_github("haowulab/DSS")'
 
